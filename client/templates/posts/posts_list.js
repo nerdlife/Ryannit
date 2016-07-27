@@ -4,8 +4,8 @@ var postsData = [
         url: 'http://ryanurie.com'
     },
     {
-    title: 'Ryan Urie',
-    url: 'http://ryanurie.com'
+    title: 'Google',
+    url: 'http://google.com'
     }, 
     {
     title: 'Stack',
@@ -17,3 +17,4 @@ var postsData = [
 Template.postsList.helpers({
     posts: postsData
 });
+
