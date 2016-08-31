@@ -15,7 +15,7 @@ Template.postSubmit.events({
             if (result.postExists)
                 alert('This topic already exists in Ryannit');
 
-            Router.go('postPage', {_id: result._id});
+            Router.go('postsList');
         });  //Meteor.call('postInsert', post, function(error, result) { 
 
     }  // 'submit form' function
