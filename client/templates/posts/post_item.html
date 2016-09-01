@@ -1,8 +1,18 @@
 <template name="postItem">
     <div class="post">
+
         <div class="post-content">
             <h3><a href="{{url}}">{{title}}</a><span>{{domain}}</span></h3>
-        </div>
-        <a href="{{pathFor 'postPage'}}" class="discuss btn btn-default">Discuss</a>
-    </div>
+            <p>
+                submitted by <h4 style="display:inline; color:orange"><u>{{author}}</u></h4>
+            </p>  
+        </div>  <!-- /.post-content -->
+
+        {{#if ownPost}}
+                    <a href="{{pathFor 'postEdit'}}" class="discuss btn btn-outline-warning" style="margin-left: 10px">Edit</a>
+        {{/if}}
+
+        <a href="{{pathFor 'postPage'}}" class="discuss btn btn-outline-success">Discuss</a>
+        
+    </div>  <!-- /.post -->
 </template>

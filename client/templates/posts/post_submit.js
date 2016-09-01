@@ -5,7 +5,7 @@ Template.postSubmit.events({
         var post = {
             url: $(e.target).find('[name=url]').val(), 
             title: $(e.target).find('[name=title]').val()
-        }; // var post 
+        };
 
         Meteor.call('postInsert', post, function(error, result) { 
             // display error message & abort insert
@@ -16,7 +16,8 @@ Template.postSubmit.events({
                 alert('This topic already exists in Ryannit');
 
             Router.go('postPage', {_id: result._id});
-        });  //Meteor.call('postInsert', post, function(error, result) { 
 
-    }  // 'submit form' function
-});  // Template.postSubmit.events(
+        });  /* Meteor.call('postInsert', post, function(error, result) {  */
+
+    }  /* 'submit form' function */
+});  /* Template.postSubmit.events( */
