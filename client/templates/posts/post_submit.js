@@ -10,10 +10,10 @@ Template.postSubmit.events({
         Meteor.call('postInsert', post, function(error, result) { 
             // display error message & abort insert
             if (error)
-                return alert(error.reason);
+                return throwError(error.reason);
 
             if (result.postExists)
-                alert('This topic already exists in Ryannit');
+                throwError('This topic already exists in Ryannit');
 
             Router.go('postPage', {_id: result._id});
 
