@@ -19,7 +19,6 @@ ecmascript@0.5.8              # Enable ECMAScript2015+ syntax in app code
 
 
 twbs:bootstrap
-session@1.1.6
 iron:router
 sacha:spin
 ian:accounts-ui-bootstrap-3
@@ -27,3 +26,4 @@ shell-server
 accounts-password
 check
 audit-argument-checks
+session
